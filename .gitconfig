@@ -1,0 +1,15 @@
+[gui]
+	recentrepo = O:/android
+[alias]
+	co = checkout
+	hist = log -5 --pretty=oneline --abbrev-commit
+	histt = log -5 --pretty=format:'%C(yellow)%h %Cred%d %Creset%s  %Cgreen(%cr)%Creset [%cn]'
+	histx = log -5 --pretty=format:'%C(yellow)%h %Cred%d %Creset%s%Creset [%cn]' --decorate --numstat
+	graph = log -5 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset [%cn]' --abbrev-commit --all
+	cam = commit -a -m
+	rmall = git rm $(git ls-files --deleted)
+[color]
+	ui = true
+[user]
+	email = Email address goes here
+	name = Full name goes here

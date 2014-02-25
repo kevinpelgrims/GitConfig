@@ -1,0 +1,2 @@
+"\C-i": menu-complete #found this on http://superuser.com/questions/222390/making-bash-tab-completion-more-like-cmd-exe/222393#222393
+set completion-ignore-case on
