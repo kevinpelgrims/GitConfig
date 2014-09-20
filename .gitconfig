@@ -2,6 +2,7 @@
 	recentrepo = O:/android
 [alias]
 	co = checkout
+	logp = log --pretty=format:'%C(yellow)%h %Cred%d %Creset%s  %Cgreen(%cr)%Creset [%cn]'
 	hist = log -5 --pretty=oneline --abbrev-commit
 	histt = log -5 --pretty=format:'%C(yellow)%h %Cred%d %Creset%s  %Cgreen(%cr)%Creset [%cn]'
 	histx = log -5 --pretty=format:'%C(yellow)%h %Cred%d %Creset%s%Creset [%cn]' --decorate --numstat
