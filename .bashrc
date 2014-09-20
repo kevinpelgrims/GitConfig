@@ -11,3 +11,6 @@ alias gc='git commit -m'
 alias gca='git commit -am'
 alias ga='git add .'
 alias grmall='git status | grep deleted: | cut -d: -f2 | xargs git rm'
+
+# Autocomplete for 'g'
+complete -o default -o nospace -F _git g
