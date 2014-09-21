@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Define bug and feature qualifiers
+bug="Bug: #"
+feature="Task: #"
+
+# Get last release tag name
+last_release=$(git describe --abbrev=0)
+
+# Print bugs and features in seperate lists
+echo ""
+echo "Changes since $last_release"
+echo ""
+
+echo "Bug fixes:"
+git log --pretty=format:'%s' $last_release..HEAD --grep="$bug"
+
+echo ""
+echo "New features:"
+git log --pretty=format:'%s' $last_release..HEAD --grep="$feature"
